@@ -639,7 +639,7 @@
                 </div>
 
                 <!-- Q2: Fill in -->
-                <div class="q-block" data-qid="1-2" data-type="text" data-answer="ئ">
+                <div class="q-block" data-qid="1-2" data-type="text" data-answer="ؤ">
                     <div class="q-num-text">Question 2</div>
                     <div class="q-text">Fill in the correct Hamza for: <span class="q-arabic">رُ _ يَة</span></div>
                     <div class="q-hint">Hint: Look at the surrounding vowels and apply the power ranking!</div>
@@ -649,7 +649,7 @@
                 </div>
 
                 <!-- Q3: Fill in -->
-                <div class="q-block" data-qid="1-3" data-type="text" data-answer="ؤ">
+                <div class="q-block" data-qid="1-3" data-type="text" data-answer="أ">
                     <div class="q-num-text">Question 3</div>
                     <div class="q-text">Fill in the correct Hamza for: <span class="q-arabic">شَ _ نٌ</span></div>
                     <input type="text" class="ans-text arabic-input" placeholder="Type the Hamza form here..."
@@ -669,7 +669,7 @@
                 </div>
 
                 <!-- Q5: Short answer -->
-                <div class="q-block" data-qid="1-5" data-type="text" data-answer="على السطر">
+                <div class="q-block" data-qid="1-5" data-type="text" data-answer="ts-2">
                     <div class="q-num-text">Question 5</div>
                     <div class="q-text">When the Hamza has a Sukoon and comes at the <em>beginning</em> of a word
                         (Hamzat al-Wasl aside), which chair does it sit on?</div>
@@ -680,7 +680,7 @@
                 <!-- Q6: Fill in -->
                 <div class="q-block" data-qid="1-6" data-type="text" data-answer="أ">
                     <div class="q-num-text">Question 6</div>
-                    <div class="q-text">Complete the word with the correct Hamza: <span class="q-arabic">كَلَ_(he
+                    <div class="q-text">Complete the word with the correct Hamza: <span class="q-arabic">_كَلَ(he
                             ate)</span></div>
                     <input type="text" class="ans-text arabic-input" placeholder="Type the opening Hamza..."
                         data-qid="1-6" />
@@ -733,7 +733,7 @@
                 </div>
 
                 <!-- Q4: Short answer -->
-                <div class="q-block" data-qid="2-4" data-type="text" data-answer="sukoon">
+                <div class="q-block" data-qid="2-4" data-type="text" data-answer="ts-3">
                     <div class="q-num-text">Question 4</div>
                     <div class="q-text">Which harakah means the letter has <strong>no vowel</strong> (silent / no
                         movement)?</div>
@@ -754,7 +754,7 @@
                 </div>
 
                 <!-- Q6: Fill in -->
-                <div class="q-block" data-qid="2-6" data-type="text" data-answer="damma">
+                <div class="q-block" data-qid="2-6" data-type="text" data-answer="ts-4">
                     <div class="q-num-text">Question 6</div>
                     <div class="q-text">The Hamza power ranking puts this harakah in <strong>second place</strong>
                         (gives the Waaw chair). What is it?</div>
@@ -805,7 +805,7 @@
                 </div>
 
                 <!-- Q3 -->
-                <div class="q-block" data-qid="3-3" data-type="text" data-answer="تنوين الضم">
+                <div class="q-block" data-qid="3-3" data-type="text" data-answer="ts-5">
                     <div class="q-num-text">Question 3</div>
                     <div class="q-text">The mark <span class="q-arabic">ٌ</span> is called?</div>
                     <input type="text" class="ans-text" placeholder="Arabic or English name..." data-qid="3-3" />
@@ -824,7 +824,7 @@
                 </div>
 
                 <!-- Q5 -->
-                <div class="q-block" data-qid="3-5" data-type="text" data-answer="كتابٌ">
+                <div class="q-block" data-qid="3-5" data-type="text" data-answer="ts-6">
                     <div class="q-num-text">Question 5</div>
                     <div class="q-text">Add the correct Tanween to make "a book" (indefinite, subject position): <span
                             class="q-arabic">كتاب</span></div>
@@ -948,7 +948,7 @@
             <div class="questions">
 
                 <!-- Q1 -->
-                <div class="q-block" data-qid="5-1" data-type="text" data-answer="alif maqsoora">
+                <div class="q-block" data-qid="5-1" data-type="text" data-answer="ts-1">
                     <div class="q-num-text">Question 1</div>
                     <div class="q-text">What is the name of the "Imposter Alif" that looks like a Yaa but sounds like an
                         Alif at the end of a word?</div>
@@ -1063,7 +1063,7 @@
                     <div class="q-num-text">Question 3</div>
                     <div class="q-text">Romanise / transliterate the pronunciation of: <span
                             class="q-arabic">حَسَدَ</span></div>
-                    <div class="q-hint">Write the sounds as you'd say them in English (e.g. ha-sa-da)</div>
+                    <div class="q-hint">Write the sounds as you'd say them in English (e.g. kha-ra-ja)</div>
                     <input type="text" class="ans-text" placeholder="Pronunciation..." data-qid="6-3" />
                     <div class="answer-reveal" id="rev-6-3"></div>
                 </div>
@@ -1125,6 +1125,13 @@
     </div>
 
     <script>
+        const tsOne = ["alif maqsoora", "alif maqsura", "alif maqsoorah", "alif maqsourah", "alif maqsoura"];
+        const tsTwo = ["alif", "alef", "ا", "أ"];
+        const tsThree = ["sukoon", "sokoon", "سُكُون", "sukoun", "سكون"];
+        const tsFour = ["damma", "dumma", "ضمة", "dammah"];
+        const tsFive = ["tanween", "tanween al-dhammah", "تنوين الضم"];
+        const tsSix = ["kitabun", "كتابُُ", "كتابً", "كتابٍ"];
+
         // Track T/F selections
         const tfSelections = {};
         function selectTF(btn, qid) {
@@ -1182,6 +1189,28 @@
         }
 
         function checkAnswer(userAns, correctAns) {
+            if (correctAns === 'ts-1') {
+                return tsOne.some(ans => normalise(userAns) === ans);
+            }
+            else if (correctAns === 'ts-2') {
+                return tsTwo.some(ans => normalise(userAns) === ans);
+            }
+            else if (correctAns === 'ts-3') {
+                return tsThree.some(ans => normalise(userAns) === ans);
+            }
+            else if (correctAns === 'ts-4') {
+                return tsFour.some(ans => normalise(userAns) === ans);
+            }
+            else if (correctAns === 'ts-5') {
+                return tsFive.some(ans => normalise(userAns) === ans);
+            }
+            else if (correctAns === 'ts-6') {
+                // If the user writes the answer in English, then we can use the normalise function to compare the answers, but if the user writes the answer in Arabic, we should compare the answers without normalising them because normalising will remove the diacritics which are important for the correct answer   
+               if (/[^\x00-\x7F]/.test(userAns)) {
+                    return tsSix.some(ans => userAns === ans);
+                }
+                return tsSix.some(ans => normalise(userAns) === ans);
+            }
             const u = normalise(userAns);
             const c = normalise(correctAns);
             if (u === c) return true;
@@ -1246,7 +1275,21 @@
                         revEl.textContent = '✅ Correct!';
                     } else {
                         revEl.className = 'answer-reveal show wrong-ans';
-                        revEl.textContent = `❌ Correct answer: ${correct}`;
+                        if (correct === "ts-1") {
+                            revEl.textContent = `❌ Correct answer: ${tsOne[0]} `;
+                        } else if (correct === "ts-2") {
+                            revEl.textContent = `❌ Correct answer: ${tsTwo[0]} `;
+                        } else if (correct === "ts-3") {
+                            revEl.textContent = `❌ Correct answer: ${tsThree[0]} `;
+                        } else if (correct === "ts-4") {
+                            revEl.textContent = `❌ Correct answer: ${tsFour[0]} `;
+                        } else if (correct === "ts-5") {
+                            revEl.textContent = `❌ Correct answer: ${tsFive[0]} `;
+                        } else if (correct === "ts-6") {
+                            revEl.textContent = `❌ Correct answer: ${tsSix[0]} `;
+                        } else {
+                            revEl.textContent = `❌ Correct answer: ${correct}`;
+                        }
                     }
                 }
             });
